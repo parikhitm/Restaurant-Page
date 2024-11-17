@@ -1,0 +1,256 @@
+body {
+    margin: 0;
+    font-family: "Verdana", "Geneva", "Tahoma", sans-serif;
+}
+
+/* Contact Page Deisgn Starts Here */
+
+.contact-div {
+    background-color: rgb(255, 239, 221);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-heading {
+    font-size: 35px;
+    border-bottom: 2px solid rgba(252, 102, 102, 1);
+    margin-top: 50px;
+}
+
+.contact-form-div {
+    background-color: rgba(252, 102, 102, 1);
+    width: 680px;
+    height: 515px;
+    border: none;
+    border-radius: 10px;
+    padding: 60px;
+    margin-top: 20px;
+    margin-bottom: 70px;
+}
+
+.contact-form-divs {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-form-divs svg {
+    width: 30px;
+    height: 30px;
+    fill: rgb(250, 250, 192);
+}
+
+.contact-form-divs p {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.contact-form-divs h2 {
+    font-size: 23px;
+    color: rgb(255, 255, 255);
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+form > input, form > textarea {
+    width: 350px;
+    height: 50px;
+    background-color: rgba(252, 102, 102, 1);
+    border: none;
+    border-bottom: 1.5px solid rgb(41, 41, 41);
+    font-size: 16px;
+}
+
+form > input, form > textarea:focus {
+    outline: none;
+}
+
+input::placeholder {
+    color: rgb(221, 221, 194);
+}
+
+form > textarea::placeholder {
+    color: rgb(221, 221, 194);
+}
+
+form button {
+    font-size: 18px;
+    margin-top: 15px;
+    width: 25%;
+    padding: 10px 20px;
+    background-color: rgb(221, 221, 194);
+    border: none;
+    border-radius: 8px;
+    color: rgb(252, 45, 45);
+    font-weight: bold;
+}
+
+
+/* Contact Page Deisgn Ends Here */
+
+/* Menu Page Design Starts Here */
+
+.menu-div {
+    background-color: rgb(255, 239, 221);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-form-div {
+    background-color: rgba(252, 102, 102, 1);
+    width: 1000px;
+    border: none;
+    border-radius: 10px;
+    padding: 60px;
+    margin-top: 20px;
+    margin-bottom: 70px;
+    display: grid;
+    grid-template: repeat(4, 1fr) / repeat(2, 1fr);
+    gap: 20px;
+    row-gap: 80px;
+}
+
+.menu-heading {
+    font-size: 35px;
+    border-bottom: 2px solid rgba(252, 102, 102, 1);
+    margin-top: 50px;
+}
+
+.menu-items {
+    display: flex;
+    gap: 10px;
+}
+
+.item-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+}
+
+.item-info p {
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+.item-name {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px dashed black;
+}
+
+.item-name p {
+    font-size: 1.3rem;
+    font-style: italic;
+    font-weight: 600;
+}
+
+.item-name span {
+    font-size: 1.25rem;
+    font-weight: 600;
+    font-style: italic;
+    color: rgb(250, 250, 192);
+}
+
+.item-image {
+    width: 180px;
+    height: 180px;
+}
+
+/* Menu Page Design Ends Here */
+
+
+/* Home Page Design Starts Here */
+
+.home-div {
+    background-image: 
+    linear-gradient(rgba(253, 179, 157, 0.548), rgba(110, 36, 13, 0.649)), 
+    url("./images/restaurant-page-background.jpg");
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-repeat: no-repeat;
+}
+
+.home-div h1 {
+    font-size: 4rem;
+    color: rgb(253, 45, 45);
+    font-weight: 1000;
+    width: 55%;
+    text-align: center;
+    margin: 0;
+    margin-top: 200px;
+}
+
+.home-div h2 {
+    font-size: 2rem;
+    font-weight: 1300;
+    width: 40%;
+    text-align: center;
+    margin: 0;
+    color: rgb(250, 250, 192);
+    margin-top: 35px;
+}
+
+#orderNow {
+    background-color: rgb(253, 45, 45);
+    padding: 15px 25px;
+    font-size: 20px;
+    margin: 0;
+    margin-top: 30px;
+    color: rgb(250, 250, 192);
+    border: none;
+    border-radius: 8px;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+/* Home Page Design Ends Here */
+
+/* Header Design Starts Here */
+
+header {
+    background-color: rgb(253, 78, 47);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#header-heading {
+    font-size: 2.5rem;
+    margin: 0;
+    color: rgb(230, 227, 190);
+}
+
+nav {
+    display: flex;
+    gap: 50px;
+}
+
+nav button {
+    border: none;
+    font-size: 23px;
+    background: none;
+    color: rgb(230, 227, 190);
+    cursor: pointer;
+    font-weight: 700;
+}
+
+nav button:focus {
+    color: black;
+}
+
+/* Header Design Ends Here */
